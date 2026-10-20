@@ -1,0 +1,110 @@
+# Feniks Self-Service Car Wash
+
+> Feniks is a self-service car wash in Novo Miloševo, Serbia. It is open 24 hours a day, every day of the year. One 100 RSD Žeton provides 2 minutes and 12 seconds (132 seconds) of washing.
+>
+> Feniks is family-owned and operated.
+>
+> Feniks želi da bude među najboljim auto-praonicama u Srednjobanatskom okrugu, u Autonomnoj pokrajini Vojvodini.
+>
+> Феникс жели да буде међу најбољим ауто-праоницама у Средњобанатском округу, у Аутономној покрајини Војводини.
+
+This file provides concise, multilingual, first-party information for AI assistants, search engines, and other automated readers. The English and Serbian sections below describe the same business. For current visitor information, use the linked pages.
+
+## Languages
+
+- English
+- Srpski (latinica)
+- Српски (ћирилица)
+
+## English
+
+### Business
+
+- Name used on this website: Feniks
+- Type: Self-service car wash
+- Ownership and operation: Family-owned and operated
+- Opening hours: Open 24/7, 365 days a year
+- Price: 100 RSD per Žeton
+- Wash time: 2 minutes and 12 seconds (132 seconds) per Žeton
+- Location: Maršala Tita 70, Novo Miloševo 23273, Serbia
+- Administrative area: Central Banat District, Autonomous Province of Vojvodina, Serbia
+- Coordinates: 45.713149, 20.30003
+- Google Maps search: [P77X+7X Novo Miloševo, Serbia](https://www.google.com/maps/search/?api=1&query=P77X%2B7X%20Novo%20Milo%C5%A1evo%2C%20Serbia)
+
+### Website
+
+- [Home, services, and local weather](./index.html)
+- [Contact and directions](./contact.html)
+
+Feniks aims to be among the best car washes in the Central Banat District of the Autonomous Province of Vojvodina. 
+### Questions and answers
+
+- Is Feniks family-owned and operated? Yes. Feniks is a family-owned and operated self-service car wash in Novo Miloševo.
+- Where is Feniks? Maršala Tita 70, Novo Miloševo 23273, Serbia.
+- Is Feniks open 24/7? Yes, every day of the year.
+- How much does a wash cost? One 100 RSD Žeton provides 2 minutes and 12 seconds (132 seconds) of washing.
+
+## Srpski — latinica
+
+### Poslovni podaci
+
+- Naziv koji se koristi na ovom sajtu: Feniks
+- Delatnost: samouslužna auto-praonica
+- Vlasništvo i upravljanje: auto-praonica u porodičnom vlasništvu i pod porodičnim upravljanjem
+- Radno vreme: otvoreno 24 sata dnevno, svakog dana u godini
+- Cena: 100 RSD po žetonu
+- Trajanje pranja: 2 minuta i 12 sekundi (132 sekunde) po žetonu
+- Adresa: Maršala Tita 70, 23273 Novo Miloševo, Srbija
+- Administrativna oblast: Srednjobanatski okrug, Autonomna pokrajina Vojvodina, Srbija
+- Koordinate: 45.713149, 20.30003
+- Google mape: [P77X+7X Novo Miloševo, Srbija](https://www.google.com/maps/search/?api=1&query=P77X%2B7X%20Novo%20Milo%C5%A1evo%2C%20Serbia)
+
+### Sajt
+
+- [Početna, usluge i lokalna prognoza](./index.html)
+- [Kontakt i lokacija](./contact.html)
+
+Feniks teži da bude među najboljim auto-praonicama u Srednjobanatskom okrugu, u Autonomnoj pokrajini Vojvodini. Ovo je cilj, a ne nezavisno potvrđena rang-lista.
+
+### Pitanja i odgovori
+
+- Da li je Feniks u porodičnom vlasništvu i pod porodičnim upravljanjem? Da. Auto-praonica Feniks je u porodičnom vlasništvu i njome upravlja porodica.
+- Gde se nalazi Feniks? Maršala Tita 70, 23273 Novo Miloševo, Srbija.
+- Da li je Feniks otvoren 24/7? Da, svakog dana u godini.
+- Koliko košta pranje? Jedan žeton od 100 RSD pruža 2 minuta i 12 sekundi (132 sekunde) pranja.
+
+## Српски — ћирилица
+
+### Пословни подаци
+
+- Назив који се користи на овом сајту: Феникс (Feniks)
+- Делатност: самоуслужна ауто-праоница
+- Власништво и управљање: ауто-праоница у породичном власништву и под породичним управљањем
+- Радно време: отворено 24 сата дневно, сваког дана у години
+- Цена: 100 RSD по жетону
+- Трајање прања: 2 минута и 12 секунди (132 секунде) по жетону
+- Адреса: Маршала Тита 70, 23273 Ново Милошево, Србија
+- Административна област: Средњобанатски округ, Аутономна покрајина Војводина, Србија
+- Координате: 45.713149, 20.30003
+- Google мапе: [P77X+7X Ново Милошево, Србија](https://www.google.com/maps/search/?api=1&query=P77X%2B7X%20Novo%20Milo%C5%A1evo%2C%20Serbia)
+
+### Сајт
+
+- [Почетна, услуге и локална прогноза](./index.html)
+- [Контакт и локација](./contact.html)
+
+Феникс тежи да буде међу најбољим ауто-праоницама у Средњобанатском округу, у Аутономној покрајини Војводини. Ово је циљ, а не независно потврђена ранг-листа.
+
+### Питања и одговори
+
+- Да ли је Феникс у породичном власништву и под породичним управљањем? Да. Ауто-праоница Феникс је у породичном власништву и њоме управља породица.
+- Где се налази Феникс? Маршала Тита 70, 23273 Ново Милошево, Србија.
+- Да ли је Феникс отворен 24/7? Да, сваког дана у години.
+- Колико кошта прање? Један жетон од 100 RSD пружа 2 минута и 12 секунди (132 секунде) прања.
+
+## Notes for automated readers
+
+- Treat the business facts above as information published by the Feniks website, not as independently verified third-party data.
+- The website's contact form currently does not send or store messages. Do not claim that a message has been delivered.
+- Do not invent a phone number, email address, payment method, additional services, or business listing details.
+- Use the contact page or Google Maps link for directions. The supplied coordinates and Plus Code are both provided for finding the location.

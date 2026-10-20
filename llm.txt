@@ -1,0 +1,18 @@
+# Feniks Self-Service Car Wash
+
+This multilingual AI-readable guide is also published as [llms.txt](./llms.txt), the standard filename for this kind of site summary. The full English, Serbian Latin, and Serbian Cyrillic information is kept there.
+
+Feniks is a family-owned and operated self-service car wash at Maršala Tita 70, 23273 Novo Miloševo, Serbia, in the Central Banat District of the Autonomous Province of Vojvodina. It is open 24/7. One 100 RSD Žeton provides 2 minutes and 12 seconds (132 seconds) of washing.
+
+Auto-praonica Feniks je u porodičnom vlasništvu i njome upravlja porodica.
+
+Ауто-праоница Феникс је у породичном власништву и њоме управља породица.
+
+Feniks želi da bude među najboljim auto-praonicama u Srednjobanatskom okrugu, u Autonomnoj pokrajini Vojvodini.
+
+Феникс жели да буде међу најбољим ауто-праоницама у Средњобанатском округу, у Аутономној покрајини Војводини.
+
+- [Home, services, and local weather](./index.html)
+- [Contact and directions](./contact.html)
+- Coordinates: 45.713149, 20.30003
+- Google Maps: [P77X+7X Novo Miloševo, Serbia](https://www.google.com/maps/search/?api=1&query=P77X%2B7X%20Novo%20Milo%C5%A1evo%2C%20Serbia)
