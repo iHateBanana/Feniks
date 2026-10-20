@@ -9,9 +9,13 @@ Write-Host 'Serving this folder at http://127.0.0.1:8000/ (Ctrl+C to stop)'
 
 $contentTypes = @{
   '.css' = 'text/css; charset=utf-8'
+  '.jpg' = 'image/jpeg'
   '.html' = 'text/html; charset=utf-8'
   '.js' = 'text/javascript; charset=utf-8'
+  '.png' = 'image/png'
   '.svg' = 'image/svg+xml'
+  '.txt' = 'text/plain; charset=utf-8'
+  '.woff2' = 'font/woff2'
 }
 
 try {
