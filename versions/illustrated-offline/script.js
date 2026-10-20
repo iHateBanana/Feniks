@@ -69,12 +69,10 @@ function initializeHeroParallax() {
   const properties = {
     imageX: '--hero-image-x',
     imageY: '--hero-image-y',
-    copyX: '--hero-copy-x',
-    copyY: '--hero-copy-y',
     stampX: '--hero-stamp-x',
     stampY: '--hero-stamp-y'
   };
-  const target = { imageX: 0, imageY: 0, copyX: 0, copyY: 0, stampX: 0, stampY: 0 };
+  const target = { imageX: 0, imageY: 0, stampX: 0, stampY: 0 };
   const current = { ...target };
   let animationFrame = 0;
   let previousFrameTime = 0;
@@ -115,8 +113,6 @@ function initializeHeroParallax() {
     const y = (event.clientY - bounds.top) / bounds.height - 0.5;
     target.imageX = -x * 8;
     target.imageY = -y * 6;
-    target.copyX = x * 3;
-    target.copyY = y * 2;
     target.stampX = -x * 5;
     target.stampY = -y * 4;
     scheduleHeroParallax();
