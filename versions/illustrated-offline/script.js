@@ -1,6 +1,12 @@
-const savedLanguage = localStorage.getItem('greenline-language');
+const savedLanguage = (() => {
+  try {
+    return localStorage.getItem('greenline-language');
+  } catch (error) {
+    console.warn('Unable to read the saved language preference:', error);
+    return null;
+  }
+})();
 let currentLanguage = savedLanguage === 'en' ? 'en' : 'sr';
-let formSubmitted = false;
 
 function renderWeatherLanguage() {
   const description = document.querySelector('#weather-description');
@@ -42,13 +48,11 @@ function applyLanguage(language) {
   document.querySelectorAll('[data-language]').forEach((button) => {
     button.setAttribute('aria-pressed', String(button.dataset.language === language));
   });
-  const status = document.querySelector('#form-status');
-  if (status && formSubmitted) {
-    status.textContent = language === 'sr'
-      ? 'Hvala na poruci. Ovaj demo obrazac proverava unos, ali još ne šalje niti čuva poruke.'
-      : 'Thanks for reaching out. This demo form is validated, but messages are not sent or stored yet.';
+  try {
+    localStorage.setItem('greenline-language', language);
+  } catch (error) {
+    console.warn('Unable to save the language preference:', error);
   }
-  localStorage.setItem('greenline-language', language);
   renderTemperatures();
   renderWeatherLanguage();
 }
@@ -122,17 +126,6 @@ function initializeHeroParallax() {
     if (reducedMotion) return;
     Object.keys(target).forEach((key) => { target[key] = 0; });
     scheduleHeroParallax(true);
-  });
-}
-
-const messageForm = document.querySelector('#message-form');
-if (messageForm) {
-  messageForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    if (!messageForm.reportValidity()) return;
-    formSubmitted = true;
-    applyLanguage(currentLanguage);
-    messageForm.reset();
   });
 }
 

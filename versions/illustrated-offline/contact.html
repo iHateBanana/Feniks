@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101310">
   <link rel="icon" href="assets/phoenix.svg" type="image/svg+xml">
-
-  <meta name="description" data-description-en="Visit the family-owned and operated Feniks self-service car wash at Maršala Tita 70 in Novo Miloševo, Serbia." data-description-sr="Posetite samouslužnu auto-praonicu Feniks, u porodičnom vlasništvu i pod porodičnim upravljanjem, na adresi Maršala Tita 70 u Novom Miloševu." content="Visit the family-owned and operated Feniks self-service car wash at Maršala Tita 70 in Novo Miloševo, Serbia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0" rel="stylesheet">
+  <meta name="description" data-description-en="Contact Feniks self-service car wash or get directions to Maršala Tita 70, Novo Miloševo. Open 24/7." data-description-sr="Kontaktirajte auto-praonicu Feniks ili pronađite put do adrese Maršala Tita 70, Novo Miloševo. Otvoreno 24/7." content="Contact Feniks self-service car wash or get directions to Maršala Tita 70, Novo Miloševo. Open 24/7.">
   <title data-en="Contact & Directions | Feniks" data-sr="Kontakt i lokacija | Feniks">Contact & Directions | Feniks</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="topline"><span class="pulse-dot"></span><span data-en="OPEN 24/7 · EACH 100 RSD TOKEN GIVES 2 MIN 12 SEC OF WASHING" data-sr="OTVORENO 24/7 · ŽETON OD 100 RSD DAJE 2 MIN 12 SEKUNDI PRANJA">OPEN 24/7 · EACH 100 RSD TOKEN GIVES 2 MIN 12 SEC OF WASHING</span></div>
+  <div class="topline"><span class="pulse-dot"></span><span data-en="OPEN 24/7 · 100 RSD PER TOKEN · 132 SEC WASH TIME" data-sr="OTVORENO 24/7 · 100 RSD PO ŽETONU · 132 SEKUNDI PRANJA">OPEN 24/7 · 100 RSD PER TOKEN · 132 SEC WASH TIME</span></div>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Feniks home"><span class="brand-mark">F<span>.</span></span><span class="brand-name">FENIKS <small data-en="SELF-SERVICE CAR WASH" data-sr="SAMOUSLUŽNA AUTO-PRAONICA">SELF-SERVICE CAR WASH</small></span></a>
     <nav class="main-nav" aria-label="Main navigation / Navigacija">
@@ -25,22 +27,23 @@
         <button type="button" data-language="sr" aria-pressed="false">SR</button>
       </div>
     </nav>
-    <a class="header-cta" href="#contact-form"><span class="cta-label" data-en="Send a message" data-sr="Pošaljite poruku">Send a message</span><span aria-hidden="true">↘</span></a>
+    <a class="header-cta" href="#contact-form"><span class="cta-label" data-en="Send a message" data-sr="Pošaljite poruku">Send a message</span><span class="material-symbols-outlined" aria-hidden="true">south_east</span></a>
   </header>
 
   <main>
     <section class="contact-intro">
       <img class="contact-intro-image" src="assets/hero-carwash.svg" alt="Illustration of a car in a self-service wash bay">
       <div class="contact-intro-shade" aria-hidden="true"></div>
-      <div class="contact-intro-copy"><p class="eyebrow"><span class="eyebrow-line"></span><span data-en="COME SAY HELLO" data-sr="TU SMO ZA VAS">COME SAY HELLO</span></p><h1><span class="title-line" data-en="LET'S GET YOU" data-sr="VAŠ AUTO">LET'S GET YOU</span><br><span class="accent-line" data-en="SHINING AGAIN." data-sr="OPET BLISTA.">SHINING AGAIN.</span></h1></div>
-      <p class="contact-intro-note" data-en="Family-owned and operated, we're right here in Novo Miloševo. Find our self-service wash and come say hello." data-sr="Ovde smo u Novom Miloševu: auto-praonica Feniks je u porodičnom vlasništvu i njome upravlja porodica. Svratite do nas.">Family-owned and operated, we're right here in Novo Miloševo. Find our self-service wash and come say hello.</p>
+      <div class="contact-intro-copy"><h1><span class="title-line" data-en="FIND" data-sr="PRONAĐITE">FIND</span><br><span class="accent-line" data-en="FENIKS." data-sr="FENIKS.">FENIKS.</span></h1></div>
+      <p class="contact-intro-note" data-en="We're at Maršala Tita 70 in Novo Miloševo. Open 24/7." data-sr="Nalazimo se u Ulici Maršala Tita 70 u Novom Miloševu. Otvoreno 24/7.">We're at Maršala Tita 70 in Novo Miloševo. Open 24/7.</p>
     </section>
 
     <section class="contact-layout" id="contact-form">
       <div class="form-panel">
-        <p class="eyebrow eyebrow-dark" data-en="DROP US A NOTE" data-sr="PIŠITE NAM">DROP US A NOTE</p>
-        <h2 data-en="What can we help with?" data-sr="Kako možemo da pomognemo?">What can we help with?</h2>
-        <form id="message-form">
+        <h2 data-en="Send us a message" data-sr="Pošaljite nam poruku">Send us a message</h2>
+        <form id="message-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p hidden><label>Leave this field empty: <input name="bot-field"></label></p>
           <div class="form-row">
             <label for="name"><span data-en="Your name" data-sr="Vaše ime">Your name</span><input id="name" name="name" autocomplete="name" required placeholder="Name" data-placeholder-en="Name" data-placeholder-sr="Ime"></label>
             <label for="email"><span data-en="Email address" data-sr="Imejl adresa">Email address</span><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" data-placeholder-en="you@example.com" data-placeholder-sr="vi@example.com"></label>
@@ -55,20 +58,20 @@
             </select>
           </label>
           <label for="message"><span data-en="Your message" data-sr="Vaša poruka">Your message</span><textarea id="message" name="message" rows="5" required placeholder="Tell us a little more..." data-placeholder-en="Tell us a little more..." data-placeholder-sr="Napišite nam više detalja..."></textarea></label>
-          <button class="button button-green form-submit" type="submit"><span class="button-label" data-en="Prepare message" data-sr="Pripremi poruku">Prepare message</span><span aria-hidden="true">↗</span></button>
+          <button class="button button-green form-submit" type="submit"><span class="button-label" data-en="Send message" data-sr="Pošaljite poruku">Send message</span><span class="material-symbols-outlined" aria-hidden="true">send</span></button>
           <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-          <p class="form-note" data-en="This static site does not send or store messages yet. Connect a form endpoint to receive submissions." data-sr="Ovaj sajt trenutno ne šalje niti čuva poruke. Povežite servis za prijem poruka da biste ih primali.">This static site does not send or store messages yet. Connect a form endpoint to receive submissions.</p>
+          <p class="form-note" data-en="Messages are collected by Netlify Forms when this site is deployed on Netlify. Set up form notifications in your Netlify site settings to receive them by email." data-sr="Netlify Forms prikuplja poruke kada je sajt objavljen na Netlify platformi. Podesite obaveštenja u Netlify podešavanjima sajta da biste ih dobijali imejlom.">Messages are collected by Netlify Forms when this site is deployed on Netlify. Set up form notifications in your Netlify site settings to receive them by email.</p>
         </form>
       </div>
       <aside class="address-panel">
-        <div class="address-panel-top"><p class="eyebrow" data-en="COME ON BY" data-sr="SVRATITE DO NAS">COME ON BY</p><span class="address-coordinate">45°43' N · 20°18' E</span></div>
-        <h2><span data-en="Find your" data-sr="Pronađite nas">Find your</span><br><span data-en="way here." data-sr="ovde.">way here.</span></h2>
+        <div class="address-panel-top"><span class="address-coordinate">45°43' N · 20°18' E</span></div>
+        <h2 data-en="Our address" data-sr="Naša adresa">Our address</h2>
         <address>Maršala Tita 70<br>Novo Miloševo 23273<br><span data-en="Serbia" data-sr="Srbija">Serbia</span></address>
         <div class="wash-facts">
           <div><span data-en="OPEN" data-sr="OTVORENO">OPEN</span><strong>24/7</strong><small data-en="365 days a year" data-sr="365 dana godišnje">365 days a year</small></div>
-          <div><span data-en="ONE ŽETON" data-sr="JEDAN ŽETON">ONE ŽETON</span><strong>100 RSD</strong><small data-en="2 min 12 sec (132 sec) of washing" data-sr="2 minuta i 12 sekundi (132 sekunde) pranja">2 min 12 sec (132 sec) of washing</small></div>
+          <div><span data-en="ONE TOKEN" data-sr="JEDAN ŽETON">ONE TOKEN</span><strong>100 RSD</strong><small data-en="132 seconds of wash time" data-sr="132 sekunde pranja">132 seconds of wash time</small></div>
         </div>
-        <a class="address-link" href="https://www.google.com/maps/search/?api=1&query=P77X%2B7X%20Novo%20Milo%C5%A1evo%2C%20Serbia" target="_blank" rel="noopener noreferrer"><span class="address-link-label" data-en="Open in Google Maps" data-sr="Otvori u Google mapama">Open in Google Maps</span><span aria-hidden="true">↗</span></a>
+        <a class="address-link" href="https://www.google.com/maps/search/?api=1&query=P77X%2B7X%20Novo%20Milo%C5%A1evo%2C%20Serbia" target="_blank" rel="noopener noreferrer"><span class="address-link-label" data-en="Open in Google Maps" data-sr="Otvori u Google mapama">Open in Google Maps</span><span class="material-symbols-outlined" aria-hidden="true">open_in_new</span></a>
         <img class="address-phoenix" src="assets/phoenix.svg" alt="" aria-hidden="true">
       </aside>
     </section>
@@ -79,6 +82,6 @@
     </section>
   </main>
 
-  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">F<span>.</span></span><span class="brand-name">FENIKS <small data-en="SELF-SERVICE CAR WASH" data-sr="SAMOUSLUŽNA AUTO-PRAONICA">SELF-SERVICE CAR WASH</small></span></a><span data-en="MADE FOR THE ROAD AHEAD." data-sr="SPREMNI ZA SVAKI PUT.">MADE FOR THE ROAD AHEAD.</span><a href="index.html"><span data-en="Back to home" data-sr="Nazad na početnu">Back to home</span> <span aria-hidden="true">↗</span></a></footer>
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">F<span>.</span></span><span class="brand-name">FENIKS <small data-en="SELF-SERVICE CAR WASH" data-sr="SAMOUSLUŽNA AUTO-PRAONICA">SELF-SERVICE CAR WASH</small></span></a><span data-en="NOVO MILOŠEVO · OPEN 24/7" data-sr="NOVO MILOŠEVO · OTVORENO 24/7">NOVO MILOŠEVO · OPEN 24/7</span><a href="index.html"><span data-en="Back to home" data-sr="Nazad na početnu">Back to home</span> <span class="material-symbols-outlined" aria-hidden="true">arrow_outward</span></a></footer>
 </body>
 </html>
