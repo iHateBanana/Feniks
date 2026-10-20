@@ -26,11 +26,11 @@ You can also serve the folder with another static HTTP server. Opening the HTML 
 ## Pages
 
 - `index.html` — Home page, wash details, local forecast, and FAQs
-- `contact.html` — Address, map, directions, and contact form demo
+- `contact.html` — Address, map, directions, and contact form
 
 ## Contact form
 
-The form validates its fields and prepares a confirmation message, but does not send or store submissions. Connect a form service or backend before using it to receive messages.
+The contact form uses [Netlify Forms](https://docs.netlify.com/forms/setup/). It is detected and collects submissions when the site is deployed through Netlify; it will not process submissions when served locally or hosted on GitHub Pages. Enable form detection for the Netlify site and configure email notifications in its Forms settings to receive submissions by email. Verify the form with a test submission after deployment.
 
 ## External services
 
@@ -39,4 +39,4 @@ The form validates its fields and prepares a confirmation message, but does not 
 
 ## Business information
 
-Feniks is at Maršala Tita 70, 23273 Novo Miloševo, Serbia, and is listed as open 24/7. One 100 RSD Žeton provides 2 minutes and 12 seconds (132 seconds) of washing. Check the website or its map link for visitor details.
+Feniks is at Maršala Tita 70, 23273 Novo Miloševo, Serbia, and is listed as open 24/7. One 100 RSD Žeton provides 132 seconds of washing. Check the website or its map link for visitor details.

@@ -1,6 +1,12 @@
-const savedLanguage = localStorage.getItem('greenline-language');
+const savedLanguage = (() => {
+  try {
+    return localStorage.getItem('greenline-language');
+  } catch (error) {
+    console.warn('Unable to read the saved language preference:', error);
+    return null;
+  }
+})();
 let currentLanguage = savedLanguage === 'en' ? 'en' : 'sr';
-let formSubmitted = false;
 let currentConditions;
 let currentTemperatureCelsius = null;
 let currentFeelsLikeCelsius = null;
@@ -10,13 +16,13 @@ let weatherLoading = true;
 let weatherUnavailable = false;
 
 const weather = {
-  clear: { en: 'Clear sky', sr: 'Vedro', symbol: '☀' },
-  partly: { en: 'Partly cloudy', sr: 'Delimično oblačno', symbol: '◐' },
-  cloudy: { en: 'Cloudy', sr: 'Oblačno', symbol: '☁' },
-  fog: { en: 'Fog', sr: 'Magla', symbol: '≋' },
-  rain: { en: 'Rain', sr: 'Kiša', symbol: '☂' },
-  snow: { en: 'Snow', sr: 'Sneg', symbol: '❄' },
-  storm: { en: 'Thunderstorm', sr: 'Grmljavina', symbol: 'ϟ' }
+  clear: { en: 'Clear sky', sr: 'Vedro', symbol: 'wb_sunny' },
+  partly: { en: 'Partly cloudy', sr: 'Delimično oblačno', symbol: 'partly_cloudy_day' },
+  cloudy: { en: 'Cloudy', sr: 'Oblačno', symbol: 'cloud' },
+  fog: { en: 'Fog', sr: 'Magla', symbol: 'foggy' },
+  rain: { en: 'Rain', sr: 'Kiša', symbol: 'rainy' },
+  snow: { en: 'Snow', sr: 'Sneg', symbol: 'weather_snowy' },
+  storm: { en: 'Thunderstorm', sr: 'Grmljavina', symbol: 'thunderstorm' }
 };
 
 function renderWeatherLanguage() {
@@ -120,7 +126,7 @@ async function loadWeather() {
     currentTemperatureCelsius = null;
     currentFeelsLikeCelsius = null;
     currentWindSpeedKmh = null;
-    document.querySelector('#weather-symbol').textContent = '—';
+    document.querySelector('#weather-symbol').textContent = 'cloud_off';
     document.querySelector('#weather-humidity').textContent = '--%';
   } finally {
     weatherLoading = false;
@@ -151,13 +157,11 @@ function applyLanguage(language) {
   document.querySelectorAll('[data-language]').forEach((button) => {
     button.setAttribute('aria-pressed', String(button.dataset.language === language));
   });
-  const status = document.querySelector('#form-status');
-  if (status && formSubmitted) {
-    status.textContent = language === 'sr'
-      ? 'Hvala na poruci. Ovaj demo obrazac proverava unos, ali još ne šalje niti čuva poruke.'
-      : 'Thanks for reaching out. This demo form is validated, but messages are not sent or stored yet.';
+  try {
+    localStorage.setItem('greenline-language', language);
+  } catch (error) {
+    console.warn('Unable to save the language preference:', error);
   }
-  localStorage.setItem('greenline-language', language);
   renderTemperatures();
   renderWindSpeed();
   renderWeatherLanguage();
@@ -316,17 +320,6 @@ function initializeMotionDesign() {
   }, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
 
   sectionLinks.forEach(({ section }) => contextObserver.observe(section));
-}
-
-const messageForm = document.querySelector('#message-form');
-if (messageForm) {
-  messageForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    if (!messageForm.reportValidity()) return;
-    formSubmitted = true;
-    applyLanguage(currentLanguage);
-    messageForm.reset();
-  });
 }
 
 applyLanguage(currentLanguage);
