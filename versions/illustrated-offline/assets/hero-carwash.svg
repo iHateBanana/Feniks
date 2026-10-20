@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1000" fill="none">
+  <defs>
+    <linearGradient id="backdrop" x1="900" y1="0" x2="900" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#dce5dc"/>
+      <stop offset=".58" stop-color="#a8b9aa"/>
+      <stop offset="1" stop-color="#657568"/>
+    </linearGradient>
+    <linearGradient id="bay-light" x1="1210" y1="130" x2="1210" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f3f7e9" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#e2ebd9" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="car-paint" x1="900" y1="330" x2="900" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#789668"/>
+      <stop offset=".55" stop-color="#4f7043"/>
+      <stop offset="1" stop-color="#385435"/>
+    </linearGradient>
+    <linearGradient id="window-glass" x1="900" y1="340" x2="900" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a9c2ac"/>
+      <stop offset="1" stop-color="#6e8d76"/>
+    </linearGradient>
+    <pattern id="floor-lines" width="110" height="110" patternUnits="userSpaceOnUse" patternTransform="skewX(-24)">
+      <path d="M0 0v110" stroke="#eef3e9" stroke-opacity=".12" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <path fill="url(#backdrop)" d="M0 0h1800v1000H0z"/>
+  <path fill="url(#bay-light)" d="M735 85h755l240 615H520z"/>
+  <path fill="#f5f8f0" fill-opacity=".18" d="M0 86h1800v13H0z"/>
+  <path stroke="#f1f5eb" stroke-opacity=".25" stroke-width="6" d="M170 105v565m1460-565v565"/>
+  <path stroke="#718573" stroke-opacity=".25" stroke-width="3" d="M215 105v540m1370-540v540"/>
+  <path fill="#78887a" fill-opacity=".45" d="M0 705h1800v295H0z"/>
+  <path fill="url(#floor-lines)" d="M0 705h1800v295H0z"/>
+  <path stroke="#e5ece2" stroke-opacity=".35" stroke-width="4" d="M0 742h1800M0 835h1800M0 928h1800"/>
+  <ellipse cx="900" cy="783" rx="675" ry="32" fill="#1d2a20" fill-opacity=".32"/>
+  <g transform="translate(135 -107.5) scale(.85 1.16)">
+  <path fill="url(#car-paint)" stroke="#344d32" stroke-width="9" stroke-linejoin="round" d="m118 674 22-91q7-28 39-40l319-67 146-106q44-33 99-39l251-24q66-6 124 20l152 70 235 20q48 4 77 42l61 83 65 101-23 32-99 17q-16-126-151-126-134 0-151 126H580q-17-126-151-126-134 0-151 126H137z"/>
+  <path fill="#3e5b37" fill-opacity=".45" d="m195 553 302-64 142-102q42-31 96-36l248-24q65-6 122 19l159 74-181-30-265-7-236 17-205 79z"/>
+  <path fill="url(#window-glass)" stroke="#344d32" stroke-width="9" stroke-linejoin="round" d="m662 463 98-78q30-24 70-28l126-12-4 119-290 10z"/>
+  <path fill="url(#window-glass)" stroke="#344d32" stroke-width="9" stroke-linejoin="round" d="m978 344 36-3q58-5 110 20l126 59 47 39-323 10z"/>
+  <path stroke="#344d32" stroke-width="9" stroke-linecap="round" d="m968 346-6 121"/>
+  <path fill="none" stroke="#3b5836" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" d="m946 475-15 190H607l-26 9m365-199-15 199h342"/>
+  <path fill="#293d2b" d="M1000 523q37-23 74 0l-7 17q-30 11-60 0z"/>
+  <path fill="#9fb28f" d="m622 480 31-9-6 23-33 7z"/>
+  <path fill="#e8eee1" d="m146 581 66-21 35 3-92 37-24 1z"/>
+  <path fill="#bf6652" d="m1617 570 38 6 18 26-55 5z"/>
+  <path fill="#dfe8d5" fill-opacity=".38" d="m251 548 196-43-98 38-120 25zM1272 419l104 20 72 39-95-28z"/>
+  <path stroke="#eff4e9" stroke-opacity=".2" stroke-width="8" stroke-linecap="round" d="m835 699 149-1m178 1h88"/>
+  </g>
+  <circle cx="500" cy="672" r="112" fill="#1c271e" stroke="#344d32" stroke-width="14"/>
+  <circle cx="500" cy="672" r="82" fill="#394b38" stroke="#9aaa8b" stroke-width="9"/>
+  <circle cx="500" cy="672" r="17" fill="#c5d0b9"/>
+  <path stroke="#9aaa8b" stroke-width="9" stroke-linecap="round" d="M500 601v142m-71-71h142m-121-50 100 100m0-100L450 722"/>
+  <circle cx="1350" cy="672" r="112" fill="#1c271e" stroke="#344d32" stroke-width="14"/>
+  <circle cx="1350" cy="672" r="82" fill="#394b38" stroke="#9aaa8b" stroke-width="9"/>
+  <circle cx="1350" cy="672" r="17" fill="#c5d0b9"/>
+  <path stroke="#9aaa8b" stroke-width="9" stroke-linecap="round" d="M1350 601v142m-71-71h142m-121-50 100 100m0-100-100 100"/>
+</svg>
