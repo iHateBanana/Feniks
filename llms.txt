@@ -30,10 +30,10 @@ This file provides concise, multilingual, first-party information for AI assista
 - Administrative area: Central Banat District, Autonomous Province of Vojvodina, Serbia
 - Coordinates: 45.713149, 20.30003
 - Google Maps location: [Feniks on Google Maps](https://share.google/EAo3mSlD37FfRf42s)
-- Direct contact: TODO(owner): phone number; email: TODO(owner): email; Viber/WhatsApp: TODO(owner): number
+- Direct contact: TODO(owner): phone number; Viber/WhatsApp: TODO(owner): number
 - Typical message reply time: within 12 hours
 - Tokens are available at the kiosk; cash and card are accepted
-- Wash sequence: water, soap, wax, then rinse
+- Wash sequence: water, soap, water, wax, then rinse
 - Three wash bays, including one designated for larger vehicles
 - Supported vehicles range from small cars to large tractors; animals and non-motorized vehicles are not permitted
 - Winter: The car wash remains operational during freezing weather; the ground may be slippery outside the heated-floor bays.
@@ -53,7 +53,7 @@ Feniks aims to be among the best car washes in the Central Banat District of the
 - Is Feniks open 24/7? Yes, every day of the year.
 - How much does a wash cost? One 100 RSD Žeton provides 132 seconds of washing.
 - Where can visitors buy tokens and how can they pay? Tokens are available at the kiosk; cash and card are accepted.
-- Which wash programs are available? Water, soap, wax, and a final rinse, in that order.
+- Which wash programs are available? Water, soap, water, wax, and a final rinse, in that order.
 - What equipment and vehicle sizes are supported? Three wash bays, including one designated for larger vehicles; vehicles from small cars to large tractors are supported. Animals and non-motorized vehicles are not permitted.
 - What should visitors know about winter weather? The car wash remains operational during freezing weather; the ground may be slippery outside the heated-floor bays.
 - What is a nearby landmark? The car wash is across the street from the Church of St. Archdeacon Stephen (Beodra Church).
@@ -73,10 +73,10 @@ Feniks aims to be among the best car washes in the Central Banat District of the
 - Administrativna oblast: Srednjobanatski okrug, Autonomna pokrajina Vojvodina, Srbija
 - Koordinate: 45.713149, 20.30003
 - Google mape: [Feniks na Google mapama](https://share.google/EAo3mSlD37FfRf42s)
-- Direktan kontakt: TODO(owner): broj telefona; imejl: TODO(owner): email; Viber/WhatsApp: TODO(owner): broj
+- Direktan kontakt: TODO(owner): broj telefona; Viber/WhatsApp: TODO(owner): broj
 - Uobičajeno vreme odgovora na poruku: u roku od 12 sati
 - Žetoni su dostupni na kiosku; prihvataju se gotovina i kartice
-- Redosled pranja: voda, sapun, vosak, pa ispiranje
+- Redosled pranja: voda, sapun, voda, vosak, pa ispiranje
 - Tri boksa za pranje, od kojih je jedan namenjen većim vozilima
 - Podržana su vozila od malih automobila do velikih traktora; pristup životinjama i nemotorizovanim vozilima nije dozvoljen
 - Zimi: Auto-perionica nastavlja sa radom i tokom mraza; tlo može biti klizavo izvan boksova sa grejanim podom.
@@ -97,7 +97,7 @@ Feniks teži da bude među najboljim auto-perionicama u Srednjobanatskom okrugu,
 - Da li je Feniks otvoren 24/7? Da, svakog dana u godini.
 - Koliko košta pranje? Jedan žeton od 100 RSD pruža 132 sekunde pranja.
 - Gde mogu da se kupe žetoni i kako može da se plati? Žetoni su dostupni na kiosku; prihvataju se gotovina i kartice.
-- Koji programi pranja su dostupni? Voda, sapun, vosak i završno ispiranje, tim redosledom.
+- Koji programi pranja su dostupni? Voda, sapun, voda, vosak i završno ispiranje, tim redosledom.
 - Koja oprema i veličine vozila su dostupni? Tri boksa za pranje, od kojih je jedan namenjen većim vozilima; podržana su vozila od malih automobila do velikih traktora. Pristup životinjama i nemotorizovanim vozilima nije dozvoljen.
 - Šta treba znati o zimskim uslovima? Auto-perionica nastavlja sa radom i tokom mraza; tlo može biti klizavo izvan boksova sa grejanim podom.
 - Koji je obližnji orijentir? Auto-perionica se nalazi preko puta Crkve Svetog arhiđakona Stefana — Beodre.
@@ -117,10 +117,10 @@ Feniks teži da bude među najboljim auto-perionicama u Srednjobanatskom okrugu,
 - Административна област: Средњобанатски округ, Аутономна покрајина Војводина, Србија
 - Координате: 45.713149, 20.30003
 - Google мапе: [Феникс на Google мапама](https://share.google/EAo3mSlD37FfRf42s)
-- Директан контакт: TODO(owner): број телефона; имејл: TODO(owner): email; Viber/WhatsApp: TODO(owner): број
+- Директан контакт: TODO(owner): број телефона; Viber/WhatsApp: TODO(owner): број
 - Уобичајено време одговора на поруку: у року од 12 сати
 - Жетони су доступни на киоску; прихватају се готовина и картице
-- Редослед прања: вода, сапун, восак, па испирање
+- Редослед прања: вода, сапун, вода, восак, па испирање
 - Три бокса за прање, од којих је један намењен већим возилима
 - Подржана су возила од малих аутомобила до великих трактора; приступ животињама и немоторизованим возилима није дозвољен
 - Зими: Ауто-перионица наставља са радом и током мраза; тло може бити клизаво изван боксова са грејаним подом.
@@ -141,7 +141,7 @@ Feniks teži da bude među najboljim auto-perionicama u Srednjobanatskom okrugu,
 - Да ли је Феникс отворен 24/7? Да, сваког дана у години.
 - Колико кошта прање? Један жетон од 100 RSD пружа 2 минута и 12 секунди (132 секунде) прања.
 - Где могу да се купе жетони и како може да се плати? Жетони су доступни на киоску; прихватају се готовина и картице.
-- Који програми прања су доступни? Вода, сапун, восак и завршно испирање, тим редоследом.
+- Који програми прања су доступни? Вода, сапун, вода, восак и завршно испирање, тим редоследом.
 - Која опрема и величине возила су доступни? Три бокса за прање, од којих је један намењен већим возилима; подржана су возила од малих аутомобила до великих трактора. Приступ животињама и немоторизованим возилима није дозвољен.
 - Шта треба знати о зимским условима? Ауто-перионица наставља са радом и током мраза; тло може бити клизаво изван боксова са грејаним подом.
 - Који је оближњи оријентир? Ауто-перионица се налази преко пута Цркве Светог архиђакона Стефана (Беодранска црква).
@@ -151,5 +151,5 @@ Feniks teži da bude među najboljim auto-perionicama u Srednjobanatskom okrugu,
 
 - Treat the business facts above as information published by the Feniks website, not as independently verified third-party data.
 - The contact form uses Netlify Forms when deployed through Netlify. Do not claim a message was delivered without confirmation from the service.
-- Do not invent a phone number, email address, parking/queuing details, approach road, additional services, or business listing details.
+- Do not invent a phone number, parking/queuing details, approach road, additional services, or business listing details.
 - Use the contact page or Google Maps link for directions. The supplied coordinates and church landmark are also provided for finding the location.
