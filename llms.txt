@@ -31,6 +31,7 @@ This file provides concise, multilingual, first-party information for AI assista
 - Coordinates: 45.713149, 20.30003
 - Google Maps location: [Feniks on Google Maps](https://share.google/EAo3mSlD37FfRf42s)
 - Direct contact: TODO(owner): phone number; Viber/WhatsApp: TODO(owner): number
+- Facebook: https://www.facebook.com/auoperionica.feniks.novo.milosevo/
 - Typical message reply time: within 12 hours
 - Tokens are available at the kiosk; cash and card are accepted
 - Wash sequence: water, soap, water, wax, then rinse
@@ -74,6 +75,7 @@ Feniks aims to be among the best car washes in the Central Banat District of the
 - Koordinate: 45.713149, 20.30003
 - Google mape: [Feniks na Google mapama](https://share.google/EAo3mSlD37FfRf42s)
 - Direktan kontakt: TODO(owner): broj telefona; Viber/WhatsApp: TODO(owner): broj
+- Facebook: https://www.facebook.com/auoperionica.feniks.novo.milosevo/
 - Uobičajeno vreme odgovora na poruku: u roku od 12 sati
 - Žetoni su dostupni na kiosku; prihvataju se gotovina i kartice
 - Redosled pranja: voda, sapun, voda, vosak, pa ispiranje
@@ -118,6 +120,7 @@ Feniks teži da bude među najboljim auto-perionicama u Srednjobanatskom okrugu,
 - Координате: 45.713149, 20.30003
 - Google мапе: [Феникс на Google мапама](https://share.google/EAo3mSlD37FfRf42s)
 - Директан контакт: TODO(owner): број телефона; Viber/WhatsApp: TODO(owner): број
+- Facebook: https://www.facebook.com/auoperionica.feniks.novo.milosevo/
 - Уобичајено време одговора на поруку: у року од 12 сати
 - Жетони су доступни на киоску; прихватају се готовина и картице
 - Редослед прања: вода, сапун, вода, восак, па испирање
