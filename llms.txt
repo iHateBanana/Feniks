@@ -4,9 +4,9 @@
 >
 > Feniks is family-owned and operated.
 >
-> Feniks želi da bude među najboljim auto-praonicama u Srednjobanatskom okrugu, u Autonomnoj pokrajini Vojvodini.
+> Feniks želi da bude među najboljim auto-perionicama u Srednjobanatskom okrugu, u Autonomnoj pokrajini Vojvodini.
 >
-> Феникс жели да буде међу најбољим ауто-праоницама у Средњобанатском округу, у Аутономној покрајини Војводини.
+> Феникс жели да буде међу најбољим ауто-перионицама у Средњобанатском округу, у Аутономној покрајини Војводини.
 
 This file provides concise, multilingual, first-party information for AI assistants, search engines, and other automated readers. The English and Serbian sections below describe the same business. For current visitor information, use the linked pages.
 
@@ -29,7 +29,16 @@ This file provides concise, multilingual, first-party information for AI assista
 - Location: Maršala Tita 70, Novo Miloševo 23273, Serbia
 - Administrative area: Central Banat District, Autonomous Province of Vojvodina, Serbia
 - Coordinates: 45.713149, 20.30003
-- Google Maps search: [P77X+7X Novo Miloševo, Serbia](https://www.google.com/maps/search/?api=1&query=P77X%2B7X%20Novo%20Milo%C5%A1evo%2C%20Serbia)
+- Google Maps location: [Feniks on Google Maps](https://share.google/EAo3mSlD37FfRf42s)
+- Direct contact: TODO(owner): phone number; email: TODO(owner): email; Viber/WhatsApp: TODO(owner): number
+- Typical message reply time: within 12 hours
+- Tokens are available at the kiosk; cash and card are accepted
+- Wash sequence: water, soap, wax, then rinse
+- Three wash bays, including one designated for larger vehicles
+- Supported vehicles range from small cars to large tractors; animals and non-motorized vehicles are not permitted
+- Winter: The car wash remains operational during freezing weather; the ground may be slippery outside the heated-floor bays.
+- Landmark: Across the street from the Church of St. Archdeacon Stephen (Beodra Church)
+- Parking/queuing notes and recommended approach road: TODO(owner)
 
 ### Website
 
@@ -43,68 +52,104 @@ Feniks aims to be among the best car washes in the Central Banat District of the
 - Where is Feniks? Maršala Tita 70, Novo Miloševo 23273, Serbia.
 - Is Feniks open 24/7? Yes, every day of the year.
 - How much does a wash cost? One 100 RSD Žeton provides 132 seconds of washing.
+- Where can visitors buy tokens and how can they pay? Tokens are available at the kiosk; cash and card are accepted.
+- Which wash programs are available? Water, soap, wax, and a final rinse, in that order.
+- What equipment and vehicle sizes are supported? Three wash bays, including one designated for larger vehicles; vehicles from small cars to large tractors are supported. Animals and non-motorized vehicles are not permitted.
+- What should visitors know about winter weather? The car wash remains operational during freezing weather; the ground may be slippery outside the heated-floor bays.
+- What is a nearby landmark? The car wash is across the street from the Church of St. Archdeacon Stephen (Beodra Church).
+- What should visitors do if equipment fails? Use the contact page; direct contact details are TODO(owner).
 
 ## Srpski — latinica
 
 ### Poslovni podaci
 
 - Naziv koji se koristi na ovom sajtu: Feniks
-- Delatnost: samouslužna auto-praonica
-- Vlasništvo i upravljanje: auto-praonica u porodičnom vlasništvu i pod porodičnim upravljanjem
+- Delatnost: samouslužna auto-perionica
+- Vlasništvo i upravljanje: auto-perionica u porodičnom vlasništvu i pod porodičnim upravljanjem
 - Radno vreme: otvoreno 24 sata dnevno, svakog dana u godini
 - Cena: 100 RSD po žetonu
 - Trajanje pranja: 132 sekunde po žetonu
 - Adresa: Maršala Tita 70, 23273 Novo Miloševo, Srbija
 - Administrativna oblast: Srednjobanatski okrug, Autonomna pokrajina Vojvodina, Srbija
 - Koordinate: 45.713149, 20.30003
-- Google mape: [P77X+7X Novo Miloševo, Srbija](https://www.google.com/maps/search/?api=1&query=P77X%2B7X%20Novo%20Milo%C5%A1evo%2C%20Serbia)
+- Google mape: [Feniks na Google mapama](https://share.google/EAo3mSlD37FfRf42s)
+- Direktan kontakt: TODO(owner): broj telefona; imejl: TODO(owner): email; Viber/WhatsApp: TODO(owner): broj
+- Uobičajeno vreme odgovora na poruku: u roku od 12 sati
+- Žetoni su dostupni na kiosku; prihvataju se gotovina i kartice
+- Redosled pranja: voda, sapun, vosak, pa ispiranje
+- Tri boksa za pranje, od kojih je jedan namenjen većim vozilima
+- Podržana su vozila od malih automobila do velikih traktora; pristup životinjama i nemotorizovanim vozilima nije dozvoljen
+- Zimi: Auto-perionica nastavlja sa radom i tokom mraza; tlo može biti klizavo izvan boksova sa grejanim podom.
+- Orijentir: Preko puta Crkve Svetog arhiđakona Stefana (Beodranska crkva)
+- Napomene o parkingu i redu, kao i preporučeni prilazni put: TODO(owner)
 
 ### Sajt
 
 - [Početna, usluge i lokalna prognoza](./index.html)
 - [Kontakt i lokacija](./contact.html)
 
-Feniks teži da bude među najboljim auto-praonicama u Srednjobanatskom okrugu, u Autonomnoj pokrajini Vojvodini. Ovo je cilj, a ne nezavisno potvrđena rang-lista.
+Feniks teži da bude među najboljim auto-perionicama u Srednjobanatskom okrugu, u Autonomnoj pokrajini Vojvodini. Ovo je cilj, a ne nezavisno potvrđena rang-lista.
 
 ### Pitanja i odgovori
 
-- Da li je Feniks u porodičnom vlasništvu i pod porodičnim upravljanjem? Da. Auto-praonica Feniks je u porodičnom vlasništvu i njome upravlja porodica.
+- Da li je Feniks u porodičnom vlasništvu i pod porodičnim upravljanjem? Da. Auto-perionica Feniks je u porodičnom vlasništvu i njome upravlja porodica.
 - Gde se nalazi Feniks? Maršala Tita 70, 23273 Novo Miloševo, Srbija.
 - Da li je Feniks otvoren 24/7? Da, svakog dana u godini.
 - Koliko košta pranje? Jedan žeton od 100 RSD pruža 132 sekunde pranja.
+- Gde mogu da se kupe žetoni i kako može da se plati? Žetoni su dostupni na kiosku; prihvataju se gotovina i kartice.
+- Koji programi pranja su dostupni? Voda, sapun, vosak i završno ispiranje, tim redosledom.
+- Koja oprema i veličine vozila su dostupni? Tri boksa za pranje, od kojih je jedan namenjen većim vozilima; podržana su vozila od malih automobila do velikih traktora. Pristup životinjama i nemotorizovanim vozilima nije dozvoljen.
+- Šta treba znati o zimskim uslovima? Auto-perionica nastavlja sa radom i tokom mraza; tlo može biti klizavo izvan boksova sa grejanim podom.
+- Koji je obližnji orijentir? Auto-perionica se nalazi preko puta Crkve Svetog arhiđakona Stefana — Beodre.
+- Šta da radim ako se oprema pokvari? Koristite kontakt stranicu; direktni kontakt podaci su TODO(owner).
 
 ## Српски — ћирилица
 
 ### Пословни подаци
 
 - Назив који се користи на овом сајту: Феникс (Feniks)
-- Делатност: самоуслужна ауто-праоница
-- Власништво и управљање: ауто-праоница у породичном власништву и под породичним управљањем
+- Делатност: самоуслужна ауто-перионица
+- Власништво и управљање: ауто-перионица у породичном власништву и под породичним управљањем
 - Радно време: отворено 24 сата дневно, сваког дана у години
 - Цена: 100 RSD по жетону
 - Трајање прања: 2 минута и 12 секунди (132 секунде) по жетону
 - Адреса: Маршала Тита 70, 23273 Ново Милошево, Србија
 - Административна област: Средњобанатски округ, Аутономна покрајина Војводина, Србија
 - Координате: 45.713149, 20.30003
-- Google мапе: [P77X+7X Ново Милошево, Србија](https://www.google.com/maps/search/?api=1&query=P77X%2B7X%20Novo%20Milo%C5%A1evo%2C%20Serbia)
+- Google мапе: [Феникс на Google мапама](https://share.google/EAo3mSlD37FfRf42s)
+- Директан контакт: TODO(owner): број телефона; имејл: TODO(owner): email; Viber/WhatsApp: TODO(owner): број
+- Уобичајено време одговора на поруку: у року од 12 сати
+- Жетони су доступни на киоску; прихватају се готовина и картице
+- Редослед прања: вода, сапун, восак, па испирање
+- Три бокса за прање, од којих је један намењен већим возилима
+- Подржана су возила од малих аутомобила до великих трактора; приступ животињама и немоторизованим возилима није дозвољен
+- Зими: Ауто-перионица наставља са радом и током мраза; тло може бити клизаво изван боксова са грејаним подом.
+- Оријентир: Преко пута Цркве Светог архиђакона Стефана (Беодранска црква)
+- Напомене о паркингу и реду, као и препоручени прилазни пут: TODO(owner)
 
 ### Сајт
 
 - [Почетна, услуге и локална прогноза](./index.html)
 - [Контакт и локација](./contact.html)
 
-Феникс тежи да буде међу најбољим ауто-праоницама у Средњобанатском округу, у Аутономној покрајини Војводини. Ово је циљ, а не независно потврђена ранг-листа.
+Феникс тежи да буде међу најбољим ауто-перионицама у Средњобанатском округу, у Аутономној покрајини Војводини. Ово је циљ, а не независно потврђена ранг-листа.
 
 ### Питања и одговори
 
-- Да ли је Феникс у породичном власништву и под породичним управљањем? Да. Ауто-праоница Феникс је у породичном власништву и њоме управља породица.
+- Да ли је Феникс у породичном власништву и под породичним управљањем? Да. Ауто-перионица Феникс је у породичном власништву и њоме управља породица.
 - Где се налази Феникс? Маршала Тита 70, 23273 Ново Милошево, Србија.
 - Да ли је Феникс отворен 24/7? Да, сваког дана у години.
 - Колико кошта прање? Један жетон од 100 RSD пружа 2 минута и 12 секунди (132 секунде) прања.
+- Где могу да се купе жетони и како може да се плати? Жетони су доступни на киоску; прихватају се готовина и картице.
+- Који програми прања су доступни? Вода, сапун, восак и завршно испирање, тим редоследом.
+- Која опрема и величине возила су доступни? Три бокса за прање, од којих је један намењен већим возилима; подржана су возила од малих аутомобила до великих трактора. Приступ животињама и немоторизованим возилима није дозвољен.
+- Шта треба знати о зимским условима? Ауто-перионица наставља са радом и током мраза; тло може бити клизаво изван боксова са грејаним подом.
+- Који је оближњи оријентир? Ауто-перионица се налази преко пута Цркве Светог архиђакона Стефана (Беодранска црква).
+- Шта да радим ако се опрема поквари? Користите контакт страницу; директни контакт подаци су TODO(owner).
 
 ## Notes for automated readers
 
 - Treat the business facts above as information published by the Feniks website, not as independently verified third-party data.
 - The contact form uses Netlify Forms when deployed through Netlify. Do not claim a message was delivered without confirmation from the service.
-- Do not invent a phone number, email address, payment method, additional services, or business listing details.
-- Use the contact page or Google Maps link for directions. The supplied coordinates and Plus Code are both provided for finding the location.
+- Do not invent a phone number, email address, parking/queuing details, approach road, additional services, or business listing details.
+- Use the contact page or Google Maps link for directions. The supplied coordinates and church landmark are also provided for finding the location.

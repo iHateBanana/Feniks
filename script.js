@@ -6,7 +6,13 @@ const savedLanguage = (() => {
     return null;
   }
 })();
-let currentLanguage = savedLanguage === 'en' ? 'en' : 'sr';
+const supportedLanguages = ['en', 'sr-Latn', 'sr-Cyrl'];
+const browserLanguage = navigator.language.toLowerCase();
+let currentLanguage = supportedLanguages.includes(savedLanguage)
+  ? savedLanguage
+  : savedLanguage === 'sr' ? 'sr-Latn'
+    : browserLanguage.startsWith('sr-cyrl') ? 'sr-Cyrl'
+      : browserLanguage.startsWith('en') ? 'en' : 'sr-Latn';
 let currentConditions;
 let currentTemperatureCelsius = null;
 let currentFeelsLikeCelsius = null;
@@ -16,35 +22,69 @@ let weatherLoading = true;
 let weatherUnavailable = false;
 
 const weather = {
-  clear: { en: 'Clear sky', sr: 'Vedro', symbol: 'wb_sunny' },
-  partly: { en: 'Partly cloudy', sr: 'Delimično oblačno', symbol: 'partly_cloudy_day' },
+  clear: { en: 'Clear sky', sr: 'Vedro', symbol: 'sun' },
+  partly: { en: 'Partly cloudy', sr: 'Delimično oblačno', symbol: 'partly-cloudy' },
   cloudy: { en: 'Cloudy', sr: 'Oblačno', symbol: 'cloud' },
-  fog: { en: 'Fog', sr: 'Magla', symbol: 'foggy' },
-  rain: { en: 'Rain', sr: 'Kiša', symbol: 'rainy' },
-  snow: { en: 'Snow', sr: 'Sneg', symbol: 'weather_snowy' },
-  storm: { en: 'Thunderstorm', sr: 'Grmljavina', symbol: 'thunderstorm' }
+  fog: { en: 'Fog', sr: 'Magla', symbol: 'fog' },
+  rain: { en: 'Rain', sr: 'Kiša', symbol: 'rain' },
+  snow: { en: 'Snow', sr: 'Sneg', symbol: 'snow' },
+  storm: { en: 'Thunderstorm', sr: 'Grmljavina', symbol: 'storm' }
 };
+
+function isSerbianLanguage(language = currentLanguage) {
+  return language !== 'en';
+}
+
+function isSerbianCyrillic(language = currentLanguage) {
+  return language === 'sr-Cyrl';
+}
+
+function toSerbianCyrillic(text) {
+  if (/^[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}$/.test(text)) return text;
+  const preservedTokens = [];
+  const protectedText = text.replace(/\bRSD\b|\b[A-Z0-9]{4,}\+[A-Z0-9]{2,}\b|TODO\(owner\)/g, (token) => {
+    preservedTokens.push(token);
+    return `\uE000${preservedTokens.length - 1}\uE001`;
+  });
+  const digraphs = { dž: 'џ', Dž: 'Џ', DŽ: 'Џ', lj: 'љ', Lj: 'Љ', LJ: 'Љ', nj: 'њ', Nj: 'Њ', NJ: 'Њ' };
+  const letters = {
+    a: 'а', b: 'б', c: 'ц', č: 'ч', ć: 'ћ', d: 'д', đ: 'ђ', e: 'е', f: 'ф', g: 'г',
+    h: 'х', i: 'и', j: 'ј', k: 'к', l: 'л', m: 'м', n: 'н', o: 'о', p: 'п', r: 'р',
+    q: 'к', s: 'с', š: 'ш', t: 'т', u: 'у', v: 'в', w: 'в', x: 'кс', y: 'и', z: 'з', ž: 'ж',
+    A: 'А', B: 'Б', C: 'Ц', Č: 'Ч', Ć: 'Ћ', D: 'Д', Đ: 'Ђ', E: 'Е', F: 'Ф', G: 'Г',
+    H: 'Х', I: 'И', J: 'Ј', K: 'К', L: 'Л', M: 'М', N: 'Н', O: 'О', P: 'П', Q: 'К',
+    R: 'Р', S: 'С', Š: 'Ш', T: 'Т', U: 'У', V: 'В', W: 'В', X: 'Кс', Y: 'И', Z: 'З', Ž: 'Ж'
+  };
+  return protectedText
+    .replace(/dž|Dž|DŽ|lj|Lj|LJ|nj|Nj|NJ/g, (digraph) => digraphs[digraph])
+    .replace(/[a-zA-ZčćđšžČĆĐŠŽ]/g, (letter) => letters[letter])
+    .replace(/\uE000(\d+)\uE001/g, (_, tokenIndex) => preservedTokens[Number(tokenIndex)]);
+}
+
+function localizedSerbian(text) {
+  return isSerbianCyrillic() ? toSerbianCyrillic(text) : text;
+}
 
 function renderWeatherLanguage() {
   const description = document.querySelector('#weather-description');
   if (!description) return;
 
   description.textContent = weatherUnavailable
-    ? (currentLanguage === 'sr' ? 'Vreme trenutno nije dostupno' : 'Weather unavailable')
+    ? (isSerbianLanguage() ? localizedSerbian('Vreme trenutno nije dostupno.') : 'Weather is unavailable right now.')
     : currentConditions
-      ? currentConditions[currentLanguage]
-      : (currentLanguage === 'sr' ? 'Učitavanje vremena' : 'Loading weather');
+      ? (isSerbianLanguage() ? localizedSerbian(currentConditions.sr) : currentConditions.en)
+      : (isSerbianLanguage() ? localizedSerbian('Učitavanje vremena…') : 'Loading weather…');
 
   const updated = document.querySelector('#weather-updated');
   if (updated) {
     if (weatherUnavailable) {
-      updated.textContent = currentLanguage === 'sr' ? 'Prognoza trenutno nije dostupna.' : 'Live forecast could not be loaded.';
+      updated.textContent = isSerbianLanguage() ? localizedSerbian('Trenutni uslovi nisu dostupni.') : 'Current conditions are unavailable.';
     } else if (weatherTime) {
-      const locale = currentLanguage === 'sr' ? 'sr-Latn-RS' : 'en-GB';
+      const locale = currentLanguage === 'sr-Cyrl' ? 'sr-Cyrl-RS' : currentLanguage === 'sr-Latn' ? 'sr-Latn-RS' : 'en-GB';
       const time = new Intl.DateTimeFormat(locale, { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Belgrade' }).format(weatherTime);
-      updated.textContent = `${currentLanguage === 'sr' ? 'Ažurirano' : 'Updated'} ${time}`;
+      updated.textContent = `${isSerbianLanguage() ? localizedSerbian('Ažurirano') : 'Updated'} ${time}`;
     } else if (weatherLoading) {
-      updated.textContent = currentLanguage === 'sr' ? 'Proveravamo trenutne uslove…' : 'Checking current conditions…';
+      updated.textContent = isSerbianLanguage() ? localizedSerbian('Proveravamo trenutne uslove…') : 'Checking current conditions…';
     }
   }
 }
@@ -53,19 +93,14 @@ function renderWindSpeed() {
   const wind = document.querySelector('#weather-wind');
   if (!wind) return;
   if (currentWindSpeedKmh === null) {
-    wind.textContent = '--';
+    wind.textContent = '-- km/h';
     return;
   }
-  wind.textContent = currentLanguage === 'sr'
-    ? `${Math.round(currentWindSpeedKmh)} km/h`
-    : `${Math.round(currentWindSpeedKmh * 0.621371)} mph`;
+  wind.textContent = `${Math.round(currentWindSpeedKmh)} km/h`;
 }
 
 function renderTemperatures() {
-  const unit = currentLanguage === 'sr' ? '°C' : '°F';
-  const format = (celsius) => celsius === null
-    ? `--${unit}`
-    : `${Math.round(currentLanguage === 'sr' ? celsius : celsius * 9 / 5 + 32)}${unit}`;
+  const format = (celsius) => celsius === null ? '--°C' : `${Math.round(celsius)}°C`;
   const temperature = document.querySelector('#weather-temperature');
   const feelsLike = document.querySelector('#weather-feels');
   if (temperature) temperature.textContent = format(currentTemperatureCelsius);
@@ -86,16 +121,19 @@ function weatherForCode(code) {
 async function loadWeather() {
   if (!document.querySelector('#weather-temperature')) return;
 
+  const controller = new AbortController();
+  const timeout = window.setTimeout(() => controller.abort(), 8000);
   try {
     const params = new URLSearchParams({
       latitude: '45.73',
       longitude: '20.30',
       current: 'temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m',
       temperature_unit: 'celsius',
+      wind_speed_unit: 'kmh',
       timezone: 'Europe/Belgrade'
     });
     const response = await fetch(`https://api.open-meteo.com/v1/forecast?${params}`, {
-      signal: AbortSignal.timeout(10000)
+      signal: controller.signal
     });
     if (!response.ok) throw new Error(`Weather request failed with HTTP ${response.status}`);
 
@@ -117,7 +155,7 @@ async function loadWeather() {
     currentFeelsLikeCelsius = current.apparent_temperature;
     currentConditions = weatherForCode(current.weather_code);
     weatherTime = timestamp;
-    document.querySelector('#weather-symbol').textContent = currentConditions.symbol;
+    document.querySelector('#weather-symbol use').setAttribute('href', `assets/icons.svg#${currentConditions.symbol}`);
     currentWindSpeedKmh = current.wind_speed_10m;
     document.querySelector('#weather-humidity').textContent = `${current.relative_humidity_2m}%`;
   } catch (error) {
@@ -126,9 +164,10 @@ async function loadWeather() {
     currentTemperatureCelsius = null;
     currentFeelsLikeCelsius = null;
     currentWindSpeedKmh = null;
-    document.querySelector('#weather-symbol').textContent = 'cloud_off';
+    document.querySelector('#weather-symbol use').setAttribute('href', 'assets/icons.svg#weather-unavailable');
     document.querySelector('#weather-humidity').textContent = '--%';
   } finally {
+    window.clearTimeout(timeout);
     weatherLoading = false;
     renderTemperatures();
     renderWindSpeed();
@@ -138,24 +177,32 @@ async function loadWeather() {
 
 function applyLanguage(language) {
   currentLanguage = language;
-  document.documentElement.lang = language === 'sr' ? 'sr-Latn' : 'en';
+  document.documentElement.lang = language;
+  const translationLanguage = isSerbianLanguage(language) ? 'sr' : 'en';
+  const translate = (text) => isSerbianCyrillic(language) ? toSerbianCyrillic(text) : text;
   document.querySelectorAll('meta[name="description"][data-description-en][data-description-sr]').forEach((meta) => {
-    meta.setAttribute('content', meta.getAttribute(`data-description-${language}`));
+    meta.setAttribute('content', translate(meta.getAttribute(`data-description-${translationLanguage}`)));
+  });
+  document.querySelectorAll('meta[data-meta-en][data-meta-sr]').forEach((meta) => {
+    meta.setAttribute('content', translate(meta.getAttribute(`data-meta-${translationLanguage}`)));
   });
   document.querySelectorAll('[data-en][data-sr]').forEach((element) => {
-    element.textContent = element.dataset[language];
+    element.textContent = translate(element.dataset[translationLanguage]);
   });
   document.querySelectorAll('[data-placeholder-en][data-placeholder-sr]').forEach((element) => {
-    element.placeholder = element.getAttribute(`data-placeholder-${language}`);
+    element.placeholder = translate(element.getAttribute(`data-placeholder-${translationLanguage}`));
   });
   document.querySelectorAll('[data-title-en][data-title-sr]').forEach((element) => {
-    element.title = element.getAttribute(`data-title-${language}`);
+    element.title = translate(element.getAttribute(`data-title-${translationLanguage}`));
   });
   document.querySelectorAll('[data-aria-en][data-aria-sr]').forEach((element) => {
-    element.setAttribute('aria-label', element.getAttribute(`data-aria-${language}`));
+    element.setAttribute('aria-label', translate(element.getAttribute(`data-aria-${translationLanguage}`)));
   });
   document.querySelectorAll('[data-language]').forEach((button) => {
     button.setAttribute('aria-pressed', String(button.dataset.language === language));
+  });
+  document.querySelectorAll('#message-form input, #message-form select, #message-form textarea').forEach((field) => {
+    field.setCustomValidity('');
   });
   try {
     localStorage.setItem('greenline-language', language);
@@ -170,6 +217,39 @@ function applyLanguage(language) {
 document.querySelectorAll('[data-language]').forEach((button) => {
   button.addEventListener('click', () => applyLanguage(button.dataset.language));
 });
+
+const messageForm = document.querySelector('#message-form');
+messageForm?.addEventListener('invalid', (event) => {
+  const field = event.target;
+  if (!(field instanceof HTMLInputElement || field instanceof HTMLSelectElement || field instanceof HTMLTextAreaElement)) return;
+  if (field.validity.valueMissing) {
+    field.setCustomValidity(isSerbianLanguage() ? localizedSerbian('Popunite ovo polje.') : 'Please complete this field.');
+  } else if (field.validity.typeMismatch && field.type === 'email') {
+    field.setCustomValidity(isSerbianLanguage() ? localizedSerbian('Unesite ispravnu imejl adresu.') : 'Enter a valid email address.');
+  }
+}, true);
+messageForm?.querySelectorAll('input, select, textarea').forEach((field) => {
+  field.addEventListener('input', () => field.setCustomValidity(''));
+  field.addEventListener('change', () => field.setCustomValidity(''));
+});
+
+const tickerGroup = document.querySelector('.ticker-group');
+if (tickerGroup) {
+  const phraseSet = Array.from(tickerGroup.children);
+  for (let copyIndex = 1; copyIndex < 12; copyIndex += 1) {
+    phraseSet.forEach((element) => {
+      const copy = element.cloneNode(true);
+      copy.setAttribute('aria-hidden', 'true');
+      copy.querySelectorAll('*').forEach((child) => child.setAttribute('aria-hidden', 'true'));
+      tickerGroup.append(copy);
+    });
+  }
+  const tickerClone = tickerGroup.cloneNode(true);
+  tickerClone.setAttribute('aria-hidden', 'true');
+  tickerClone.querySelectorAll('[aria-hidden]').forEach((element) => element.setAttribute('aria-hidden', 'true'));
+  tickerGroup.parentElement.append(tickerClone);
+  tickerGroup.parentElement.classList.add('ticker-ready');
+}
 
 function initializeMotionDesign() {
   const hero = document.querySelector('.hero');
