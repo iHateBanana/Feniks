@@ -107,6 +107,7 @@ button, input, select, textarea { font: inherit; }
 .brand-name { font-size: 11px; font-weight: 700; letter-spacing: .08em; line-height: 1.2; }
 .brand-name small { display: block; color: var(--muted); font-size: 8px; letter-spacing: .22em; margin-top: 3px; }
 .icon { display: inline-block; width: 1em; height: 1em; fill: currentColor; vertical-align: -.125em; }
+[hidden] { display: none !important; }
 .main-nav { display: flex; align-items: center; gap: clamp(18px, 3vw, 42px); }
 .main-nav a { position: relative; color: #aeb3aa; font-size: 12px; transition: color .2s ease; }
 .main-nav a::after { position: absolute; right: 0; bottom: -7px; left: 0; height: 1px; background: var(--green-accent); content: ''; transform: scaleX(0); transform-origin: left; transition: transform .25s ease; }
